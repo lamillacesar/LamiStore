@@ -1,3 +1,25 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD6ZcbwWlkfB-fe1D4jRZA-WcxFCyMu7EY",
+  authDomain: "lamistore-db.firebaseapp.com",
+  projectId: "lamistore-db",
+  storageBucket: "lamistore-db.firebasestorage.app",
+  messagingSenderId: "557754615530",
+  appId: "1:557754615530:web:e6ef9f8336cf65fc6ab993",
+  measurementId: "G-LFJ4KV08LE"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 // --- 1. Definición de Productos y Base de Datos (JSON simulado) ---
 const products = [
     {
